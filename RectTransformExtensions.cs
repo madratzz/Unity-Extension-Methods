@@ -93,10 +93,10 @@ namespace ExtensionMethods
         newPos.y - ((1f - trans.pivot.y) * trans.rect.height), trans.localPosition.z);
     }
 
-    public static void SetAnchoredPositionX(this RectTransform trans, float targetY)
+    public static void SetAnchoredPositionX(this RectTransform trans, float targetX)
     {
       var position = trans.anchoredPosition;
-      position.y = targetY;
+      position.x = targetX;
       trans.anchoredPosition = position;
     }
     public static void SetAnchoredPositionY(this RectTransform trans, float targetY)
