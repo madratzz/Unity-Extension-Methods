@@ -112,5 +112,14 @@ namespace ExtensionMethods
       position.y = pos.y;
       trans.anchoredPosition = position;
     }
+
+    public static void SetScale(this RectTransform trans, float scale)
+    {
+      var localScale = trans.localScale;
+      localScale.x = scale;
+      localScale.y = scale;
+      localScale.z = scale;
+      trans.localScale = localScale;
+    }
   }
 }
