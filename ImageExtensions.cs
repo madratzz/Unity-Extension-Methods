@@ -7,7 +7,7 @@ namespace ExtensionMethods
 {
     public static class ImageExtensions
     {
-        public static void SetOpacity(this Image image, float alpha)
+        public static void SetAlpha(this Image image, float alpha)
         {
             var currentColor = image.color;
             currentColor.a = alpha;
